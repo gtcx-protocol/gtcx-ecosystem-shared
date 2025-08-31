@@ -1,0 +1,32 @@
+{
+  "id": "accessibility",
+  "name": "Accessibility & Usability",
+  "version": "1.0.0",
+  "description": "Accessibility templates for WCAG 2.2, usability testing, and inclusive design",
+  "author": "GTCX Team",
+  "templates": {
+    "wcag": {
+      "name": "WCAG 2.2 Template",
+      "description": "Template for WCAG 2.2 AA compliance documentation",
+      "file": "wcag.md",
+      "schema": "wcag.json"
+    },
+    "usability": {
+      "name": "Usability Testing Template",
+      "description": "Template for usability testing plans and reports",
+      "file": "usability.md",
+      "schema": "usability.json"
+    },
+    "inclusive-design": {
+      "name": "Inclusive Design Template",
+      "description": "Template for inclusive design guidelines and practices",
+      "file": "inclusive-design.md",
+      "schema": "inclusive-design.json"
+    }
+  },
+  "commands": {
+    "new-wcag": "Create WCAG compliance documentation",
+    "new-usability": "Create usability testing documentation",
+    "new-inclusive": "Create inclusive design guidelines"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "scrum",
+  "name": "Scrum & Agile Ceremonies",
+  "version": "1.0.0",
+  "description": "Scrum templates for stand-ups, retrospectives, sprint planning, and other ceremonies",
+  "author": "GTCX Team",
+  "templates": {
+    "standup": {
+      "name": "Daily Standup Template",
+      "description": "Template for daily standup meetings",
+      "file": "standup.md",
+      "schema": "standup.json"
+    },
+    "retrospective": {
+      "name": "Retrospective Template",
+      "description": "Template for sprint retrospectives",
+      "file": "retrospective.md",
+      "schema": "retrospective.json"
+    },
+    "sprint-planning": {
+      "name": "Sprint Planning Template",
+      "description": "Template for sprint planning sessions",
+      "file": "sprint-planning.md",
+      "schema": "sprint-planning.json"
+    },
+    "spike": {
+      "name": "Spike Template",
+      "description": "Template for technical spikes and research",
+      "file": "spike.md",
+      "schema": "spike.json"
+    }
+  },
+  "commands": {
+    "new-standup": "Create daily standup template",
+    "new-retro": "Create retrospective template",
+    "new-sprint": "Create sprint planning template",
+    "new-spike": "Create technical spike template"
+  }
+}

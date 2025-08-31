@@ -1,0 +1,94 @@
+{
+  "name": "@gtcx/ecosystem-shared",
+  "version": "1.0.0",
+  "description": "GTCX Shared Ecosystem - Common Components, Utilities, and Infrastructure for the GTCX Protocol Ecosystem",
+  "private": true,
+  "workspaces": [
+    "core/*",
+    "crypto/*",
+    "ui/*",
+    "utilities/*"
+  ],
+  "scripts": {
+    "dev:all": "concurrently \"npm run dev:core\" \"npm run dev:crypto\" \"npm run dev:ui\" \"npm run dev:utilities\"",
+    "dev:core": "npm run dev --workspace=core",
+    "dev:crypto": "npm run dev --workspace=crypto",
+    "dev:ui": "npm run dev --workspace=ui",
+    "dev:utilities": "npm run dev --workspace=utilities",
+    "build:all": "npm run build --workspaces",
+    "build:core": "npm run build --workspace=core",
+    "build:crypto": "npm run build --workspace=crypto",
+    "build:ui": "npm run build --workspace=ui",
+    "build:utilities": "npm run build --workspace=utilities",
+    "test:all": "npm run test --workspaces",
+    "test:core": "npm run test --workspace=core",
+    "test:crypto": "npm run test --workspace=crypto",
+    "test:ui": "npm run test --workspace=ui",
+    "test:utilities": "npm run test --workspace=utilities",
+    "lint:all": "npm run lint --workspaces",
+    "type-check:all": "npm run type-check --workspaces",
+    "install:all": "npm install && npm run install:workspaces",
+    "install:workspaces": "npm install --workspaces",
+    "shared:setup": "npm run install:all && npm run setup:workspaces",
+    "setup:workspaces": "npm run setup --workspaces",
+    "shared:start": "npm run dev:core",
+    "shared:build": "npm run build:core",
+    "shared:test": "npm run test:core",
+    "ecosystem:status": "npm run status --workspaces",
+    "ecosystem:health": "npm run health --workspaces",
+    "ecosystem:logs": "npm run logs --workspaces"
+  },
+  "keywords": [
+    "gtcx",
+    "shared",
+    "components",
+    "utilities",
+    "infrastructure",
+    "design-system",
+    "crypto",
+    "ui",
+    "core",
+    "global-trade",
+    "compliance",
+    "reusable-components"
+  ],
+  "author": "GTCX Protocol Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gtcx-protocol/gtcx-ecosystem-shared.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gtcx-protocol/gtcx-ecosystem-shared/issues"
+  },
+  "homepage": "https://github.com/gtcx-protocol/gtcx-ecosystem-shared#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "lerna": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.0"
+  },
+  "config": {
+    "shared": {
+      "version": "1.0.0",
+      "ecosystem": "gtcx-ecosystem-shared",
+      "supportedComponents": ["core", "crypto", "ui", "utilities"],
+      "supportedFeatures": [
+        "reusable-components",
+        "standardized-interfaces",
+        "security-framework",
+        "performance-optimization",
+        "cross-platform-support",
+        "design-system"
+      ]
+    }
+  }
+}

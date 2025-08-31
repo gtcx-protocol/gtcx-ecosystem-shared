@@ -1,0 +1,32 @@
+{
+  "id": "compliance",
+  "name": "Compliance & Security",
+  "version": "1.0.0",
+  "description": "Compliance templates for SOC2, ISO 27001, and security frameworks",
+  "author": "GTCX Team",
+  "templates": {
+    "soc2": {
+      "name": "SOC2 Template",
+      "description": "Template for SOC2 compliance documentation",
+      "file": "soc2.md",
+      "schema": "soc2.json"
+    },
+    "iso27001": {
+      "name": "ISO 27001 Template",
+      "description": "Template for ISO 27001 information security management",
+      "file": "iso27001.md",
+      "schema": "iso27001.json"
+    },
+    "security": {
+      "name": "Security Framework Template",
+      "description": "Template for security framework implementation",
+      "file": "security.md",
+      "schema": "security.json"
+    }
+  },
+  "commands": {
+    "new-soc2": "Create SOC2 compliance documentation",
+    "new-iso27001": "Create ISO 27001 documentation",
+    "new-security": "Create security framework documentation"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ai-trust-safety",
+  "name": "AI Trust & Safety",
+  "version": "1.0.0",
+  "description": "AI Trust & Safety templates for model cards, risk registers, and safety policies",
+  "author": "GTCX Team",
+  "templates": {
+    "model-card": {
+      "name": "Model Card Template",
+      "description": "Template for AI model documentation and transparency",
+      "file": "model-card.md",
+      "schema": "model-card.json"
+    },
+    "risk-register": {
+      "name": "Risk Register Template",
+      "description": "Template for AI risk assessment and mitigation",
+      "file": "risk-register.md",
+      "schema": "risk-register.json"
+    },
+    "safety-policy": {
+      "name": "Safety Policy Template",
+      "description": "Template for AI safety policies and procedures",
+      "file": "safety-policy.md",
+      "schema": "safety-policy.json"
+    }
+  },
+  "commands": {
+    "new-model-card": "Create AI model documentation",
+    "new-risk-register": "Create AI risk assessment",
+    "new-safety-policy": "Create AI safety policies"
+  }
+}
