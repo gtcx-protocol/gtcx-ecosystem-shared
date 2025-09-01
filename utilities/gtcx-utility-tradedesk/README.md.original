@@ -1,0 +1,283 @@
+# 🌍 GTCX Platform
+
+> **Global Trust and Compliance eXchange** - Revolutionary blockchain-verified commodity global trade platform
+
+## 🎯 Platform Overview
+
+The GTCX Platform is a comprehensive ecosystem for transparent, compliant commodity trading. This unified monorepo structure contains three specialized applications that work together to create an end-to-end solution for the global commodity supply chain.
+
+### 🌟 Key Innovation
+- **GPS-Verified Sourcing**: Cryptographic proof of commodity origin location
+- **Blockchain Compliance**: Immutable audit trails for regulatory requirements  
+- **Digital Identity**: Cross-border KYC/AML verification
+- **Professional Trading**: Institutional-grade commodity trading infrastructure
+
+## 🏗️ Monorepo Architecture
+
+This repository follows a **workspace-based monorepo** structure, allowing independent development while sharing common resources:
+
+```
+gtcx/                        # 🏠 Monorepo Root
+├── apps/                    # 📱 Application Suite
+│   ├── geotag/             # 🗺️  GeoTag™ - GPS Commodity Verification
+│   ├── tradepass/          # 🆔 TradePass™ - Digital Identity  
+│   ├── tradedesk/          # 📊 TradeDesk™ - Professional Trading
+│   └── launchpad/          # 🚀 GTCX Launchpad - AI-Powered Development Platform
+│
+├── services/               # ⚙️  Backend Services
+│   ├── gtcx-backend/      # 🌐 Core Rails API
+│   ├── telegram-bot/      # 🤖 Telegram Bot Service
+│   └── service-template/  # 🚀 Service Development Template
+│
+├── packages/              # 📦 Shared Libraries
+│   ├── shared-ui/         # 🎨 Common UI Components
+│   ├── shared-crypto/     # 🔐 Cryptography Utilities
+│   ├── shared-types/      # 📝 TypeScript Definitions
+│   └── shared-utils/      # 🛠️  Common Utilities
+│
+├── agentic/               # 🤖 AI Agent Infrastructure
+│   ├── gtcx-agentic-architecture.md    # 🏗️ Core AI Architecture
+│   ├── gtcx-business-requirements.md   # 💼 Business Case
+│   └── gtcx-software-dev-guide.md     # 💻 Development Guide
+│
+├── docs/                  # 📚 Unified Documentation
+│   ├── 01-overview/       # 📋 Project Overview
+│   ├── 02-user-guides/    # 👥 User Documentation
+│   ├── 03-technical/      # 🔧 Technical Architecture
+│   ├── 04-development/    # 💻 Development Setup
+│   ├── 05-business/       # 💼 Business & Compliance
+│   ├── 06-security/       # 🔒 Security Protocols
+│   └── 07-archived/       # 📦 Historical Documentation
+│
+├── config/                # ⚙️  Shared Configuration
+│   ├── eslint/            # 🔍 Code Quality Rules
+│   ├── typescript/        # 📝 TypeScript Config
+│   └── environment/       # 🌍 Environment Variables
+│
+├── .github/               # 🔄 CI/CD Workflows
+│   └── workflows/         # ⚡ GitHub Actions
+│
+├── package.json           # 📦 Workspace Configuration
+└── README.md             # 📖 This File
+```
+
+### 🎯 Why Monorepo?
+
+**✅ Development Benefits**
+- **Shared Resources**: Common UI components, utilities, and types
+- **Atomic Changes**: Single commit can update multiple applications
+- **Consistent Tooling**: Unified linting, testing, and build processes
+- **Cross-App Integration**: Easy data sharing between applications
+
+**✅ Business Benefits**
+- **Faster Development**: Reusable components and shared logic
+- **Quality Assurance**: Consistent standards across all applications
+- **Simplified Maintenance**: Single repository to manage and deploy
+- **Unified Documentation**: Shared knowledge base for entire platform
+
+## 📱 Application Suite
+
+### 🗺️ GeoTag™ - GPS Commodity Verification
+**Location:** `/apps/geotag/`
+
+The flagship commodity verification application that ensures commodity sourcing compliance through GPS technology:
+
+**🔍 Core Features**
+- **GPS Location Verification**: Real-time cryptographic proof of commodity origin location
+- **Photo Evidence Capture**: High-resolution images with metadata validation
+- **Compliance Certificates**: Government-accepted documentation generation  
+- **Blockchain Recording**: Immutable transaction and location logging
+
+**👥 Target Users**: Commodity producers, cooperatives, compliance officers
+
+---
+
+### 🆔 TradePass™ - Digital Identity Platform  
+**Location:** `/apps/tradepass/`
+
+Comprehensive digital identity solution for cross-border commodity trading:
+
+**🔍 Core Features**
+- **Government ID Verification**: Multi-jurisdiction document validation
+- **Biometric Authentication**: Facial recognition and fingerprint scanning
+- **KYC/AML Compliance**: Automated know-your-customer workflows
+- **Cross-Border Validation**: International identity verification protocols
+
+**👥 Target Users**: Commodity traders, exporters, compliance officers, financial institutions
+
+---
+
+### 📊 TradeDesk™ - Professional Trading Platform
+**Location:** `/apps/tradedesk/`
+
+Institutional-grade trading platform for commodity professionals:
+
+**🔍 Core Features**
+- **Real-Time Market Data**: Live pricing and market analytics
+- **Advanced Trading Tools**: Professional order management and execution
+- **Portfolio Management**: Comprehensive asset tracking and reporting
+- **Institutional Features**: High-volume trading and API integration
+
+**👥 Target Users**: Professional commodity traders, investment firms, commodity exchanges
+
+## 🚀 Quick Start Guide
+
+### Prerequisites
+- **Node.js**: 18.0+ 
+- **npm**: 9.0+
+- **Expo CLI**: Latest version
+- **Git**: For version control
+
+### 1️⃣ Repository Setup
+```bash
+# Clone the GTCX platform repository
+git clone https://github.com/gtcx/gtcx-platform.git
+cd gtcx
+
+# Install all workspace dependencies
+npm install
+
+# Initialize development environment
+npm run setup:dev
+```
+
+### 2️⃣ Development Commands
+
+**🎯 Start All Applications**
+```bash
+npm run dev:all        # Starts all three apps simultaneously
+```
+
+**🎯 Individual Application Development**
+```bash
+npm run dev:geotag     # GeoTag™ on port 8081
+npm run dev:tradepass  # TradePass™ on port 8082  
+npm run dev:tradedesk  # TradeDesk™ on port 8083
+```
+
+**🎯 Quality Assurance**
+```bash
+npm run test:all       # Run all test suites
+npm run lint:all       # Code quality checks
+npm run type-check:all # TypeScript validation
+npm run build:all      # Production builds
+```
+
+### 3️⃣ Mobile Development
+```bash
+# iOS Development
+cd apps/geotag && npx expo start --ios
+cd apps/tradepass && npx expo start --ios
+
+# Android Development  
+cd apps/geotag && npx expo start --android
+cd apps/tradepass && npx expo start --android
+```
+
+## 🌐 Deployment & Infrastructure
+
+### **Production Environment**
+- **Main Platform**: [https://gtcx.com](https://gtcx.com)
+- **API Gateway**: [https://api.gtcx.com](https://api.gtcx.com)
+- **Documentation**: [https://docs.gtcx.com](https://docs.gtcx.com)
+
+### **Development Environment**  
+- **Staging Platform**: [https://staging.gtcx.com](https://staging.gtcx.com)
+- **Development API**: [https://dev-api.gtcx.com](https://dev-api.gtcx.com)
+- **Testing Environment**: [https://test.gtcx.com](https://test.gtcx.com)
+
+### **Mobile App Stores**
+- **iOS App Store**: GeoTag™, TradePass™ (Coming Soon: TradeDesk™)
+- **Google Play Store**: GeoTag™, TradePass™ (Coming Soon: TradeDesk™)
+- **Expo Store**: Development builds available
+
+## 📚 Comprehensive Documentation
+
+The `/docs/` directory contains extensive documentation organized by purpose:
+
+### **📋 For Project Managers**
+- **[01-overview/](./docs/01-overview/)** - Executive summaries, roadmaps, business case
+- **[05-business/](./docs/05-business/)** - Compliance, regulations, market analysis
+
+### **👥 For End Users**  
+- **[02-user-guides/](./docs/02-user-guides/)** - Application tutorials, FAQs, troubleshooting
+
+### **💻 For Developers**
+- **[04-development/](./docs/04-development/)** - Setup guides, coding standards, testing procedures
+- **[03-technical/](./docs/03-technical/)** - API documentation, architecture diagrams
+
+### **🔒 For Security Teams**
+- **[06-security/](./docs/06-security/)** - Security protocols, compliance frameworks, audit procedures
+
+### **📦 Historical Reference**
+- **[07-archived/](./docs/07-archived/)** - Development logs, migration notes, deprecated documentation
+
+## 🏢 Repository Management
+
+### **GitHub Repository Structure**
+```bash
+# Primary Repository (This Repository)
+gtcx/gtcx-platform              # Main codebase with all applications
+
+# Supporting Repositories  
+gtcx/gtcx-infrastructure         # DevOps, Terraform, deployment scripts
+gtcx/gtcx-documentation         # Public documentation website
+gtcx/gtcx-mobile-releases       # Mobile app store releases
+```
+
+### **Branch Strategy**
+- **`main`**: Production-ready code
+- **`develop`**: Integration branch for new features  
+- **`feature/`**: Individual feature development
+- **`hotfix/`**: Critical production fixes
+- **`release/`**: Release preparation branches
+
+### **Workspace Management**
+Each application (`apps/*`) and service (`services/*`) is an independent npm workspace:
+
+```bash
+# Work within specific applications
+cd apps/geotag && npm run start
+cd apps/tradepass && npm run test  
+cd services/gtcx-api && npm run dev
+
+# Or use workspace commands from root
+npm run start --workspace=apps/geotag
+npm run test --workspace=apps/tradepass
+```
+
+## 🤝 Contributing
+
+This is a **proprietary platform** under active development. For contribution guidelines and development standards, see:
+
+- **[Development Setup](./docs/04-development/setup/)**
+- **[Coding Standards](./docs/04-development/COMPREHENSIVE_CODE_ASSESSMENT.md)**  
+- **[Testing Procedures](./docs/04-development/testing/)**
+
+## 📄 Legal & Licensing
+
+**Proprietary Software** - All rights reserved to GTCX Platform Ltd.
+
+- **Commercial Use**: Licensed only to authorized partners and customers
+- **Source Code**: Not for public distribution or modification
+- **Documentation**: Available for licensed users and development partners
+
+For licensing inquiries: [legal@gtcx.com](mailto:legal@gtcx.com)
+
+---
+
+## 🎯 Mission Statement
+
+> **"Building the future of transparent, compliant commodity trading through innovative blockchain technology and GPS verification."
+
+**Global Trust and Compliance eXchange (GTCX)** represents the next generation of commodity trading infrastructure.**
+
+**🌍 Global Impact Goals:**
+- Eliminate conflict commodities from global supply chains
+- Provide financial inclusion for commodity producers worldwide  
+- Establish transparent, auditable commodity trading
+- Support sustainable sourcing practices and environmental compliance
+
+---
+
+*Last Updated: January 2025 | Platform Version: 1.0.0*

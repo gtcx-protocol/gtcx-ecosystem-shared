@@ -1,0 +1,40 @@
+{
+  "name": "@geotag/shared-ui",
+  "version": "1.0.0",
+  "description": "Shared UI components and design system for GeoTag and TradeDesk",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "storybook": "start-storybook -p 6006"
+  },
+  "keywords": [
+    "geotag",
+    "tradedesk",
+    "react-native",
+    "ui-components",
+    "design-system"
+  ],
+  "author": "GeoTag Team",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "react": "19.0.0",
+    "react-native": "0.79.5",
+    "expo": "~53.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "@types/react": "~19.0.10",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.2.1"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.0",
+    "expo-linear-gradient": "~14.1.5",
+    "expo-haptics": "~14.1.4"
+  }
+}

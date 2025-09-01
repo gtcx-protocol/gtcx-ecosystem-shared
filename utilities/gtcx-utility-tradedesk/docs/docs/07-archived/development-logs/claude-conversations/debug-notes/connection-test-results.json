@@ -1,0 +1,14 @@
+[
+  {
+    "success": true,
+    "reason": "server_ready",
+    "duration": 3831,
+    "port": 8084,
+    "stdout": "Starting project at /Users/amanianai/geotag-app/tradepass-app\nStarting Metro Bundler\nWaiting on http://localhost:8084\nLogs for your project will appear below.\n",
+    "stderr": "opendir(/Users/amanianai/Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents) -> Operation not permitted. Marking this portion of the tree deleted\nTo clear this warning, run:\n`watchman watch-del '/Users/amanianai' ; watchman watch-project '/Users/amanianai'`\n\nopendir(/Users/amanianai/Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents) -> Operation not permitted. Marking this portion of the tree deleted\nTo clear this warning, run:\n`watchman watch-del '/Users/amanianai' ; watchman watch-project '/Users/amanianai'`\n\n",
+    "connectionTest": {
+      "success": true,
+      "duration": 12
+    }
+  }
+]
