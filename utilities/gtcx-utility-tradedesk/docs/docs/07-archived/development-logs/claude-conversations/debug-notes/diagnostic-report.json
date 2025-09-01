@@ -1,0 +1,113 @@
+{
+  "timestamp": "2025-08-09T00:28:49.991Z",
+  "tests": [
+    {
+      "name": "package_conflicts",
+      "result": true,
+      "timestamp": "2025-08-09T00:28:49.994Z"
+    },
+    {
+      "name": "ports_and_processes",
+      "result": {
+        "8081": "occupied (node)",
+        "8082": "available",
+        "8083": "available",
+        "8084": "available",
+        "8085": "available",
+        "8086": "available",
+        "8087": "available",
+        "8088": "available",
+        "8089": "available",
+        "8090": "available"
+      },
+      "timestamp": "2025-08-09T00:28:50.062Z"
+    },
+    {
+      "name": "metro_config",
+      "result": {
+        "configExists": true,
+        "fallbackExists": true,
+        "configValid": true,
+        "aliasesConfigured": true
+      },
+      "timestamp": "2025-08-09T00:28:50.062Z"
+    },
+    {
+      "name": "metro_compilation",
+      "result": {
+        "success": false,
+        "reason": "exit_code",
+        "exitCode": 1,
+        "duration": 456,
+        "stdout": "",
+        "stderr": "unknown or unexpected option: --no-tunnel\n",
+        "port": 8090,
+        "errorDetails": "Metro exited with code 1"
+      },
+      "timestamp": "2025-08-09T00:28:50.518Z"
+    }
+  ],
+  "errors": [
+    {
+      "timestamp": "2025-08-09T00:28:50.511Z",
+      "message": "METRO STDERR: unknown or unexpected option: --no-tunnel"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.518Z",
+      "message": "❌ Metro exited with code 1"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.518Z",
+      "message": "🚨 CRITICAL ERRORS:"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.519Z",
+      "message": "   METRO STDERR: unknown or unexpected option: --no-tunnel"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.519Z",
+      "message": "   ❌ Metro exited with code 1"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.519Z",
+      "message": "   🚨 CRITICAL ERRORS:"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.519Z",
+      "message": "   Attempt 1: FAILED"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.519Z",
+      "message": "      Reason: exit_code"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.519Z",
+      "message": "      Details: Metro exited with code 1"
+    }
+  ],
+  "warnings": [
+    {
+      "timestamp": "2025-08-09T00:28:50.061Z",
+      "message": "   Port 8081: occupied (node)"
+    },
+    {
+      "timestamp": "2025-08-09T00:28:50.518Z",
+      "message": "⚠️ Skipping connection tests due to compilation failure"
+    }
+  ],
+  "connectionAttempts": [],
+  "bundlingAttempts": [
+    {
+      "success": false,
+      "reason": "exit_code",
+      "exitCode": 1,
+      "duration": 456,
+      "stdout": "",
+      "stderr": "unknown or unexpected option: --no-tunnel\n",
+      "port": 8090,
+      "errorDetails": "Metro exited with code 1"
+    }
+  ],
+  "packageIssues": [],
+  "metroLogs": []
+}

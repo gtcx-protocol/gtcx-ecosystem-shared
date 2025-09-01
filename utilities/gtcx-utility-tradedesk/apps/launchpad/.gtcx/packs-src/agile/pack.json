@@ -1,0 +1,32 @@
+{
+  "id": "agile",
+  "name": "Agile Development",
+  "version": "1.0.0",
+  "description": "Agile development templates for epics, features, and user stories",
+  "author": "GTCX Team",
+  "templates": {
+    "epic": {
+      "name": "Epic Template",
+      "description": "Template for creating epics",
+      "file": "epic.md",
+      "schema": "epic.json"
+    },
+    "feature": {
+      "name": "Feature Template", 
+      "description": "Template for creating features",
+      "file": "feature.md",
+      "schema": "feature.json"
+    },
+    "story": {
+      "name": "User Story Template",
+      "description": "Template for creating user stories",
+      "file": "story.md", 
+      "schema": "story.json"
+    }
+  },
+  "commands": {
+    "new-epic": "Create a new epic",
+    "new-feature": "Create a new feature",
+    "new-story": "Create a new user story"
+  }
+}

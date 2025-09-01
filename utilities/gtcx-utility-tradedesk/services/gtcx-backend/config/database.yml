@@ -1,0 +1,31 @@
+# ============================================================================
+# GTCX BACKEND DATABASE CONFIGURATION
+# Production-ready PostgreSQL setup for real customers
+# ============================================================================
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: <%= ENV.fetch("DATABASE_USERNAME") { "gtcx" } %>
+  password: <%= ENV.fetch("DATABASE_PASSWORD") { "gtcx_secure_password" } %>
+  host: <%= ENV.fetch("DATABASE_HOST") { "localhost" } %>
+  port: <%= ENV.fetch("DATABASE_PORT") { 5432 } %>
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+test:
+  <<: *default
+  database: gtcx_backend_test
+
+production:
+  <<: *default
+  database: gtcx_backend_production
+  url: <%= ENV.fetch("DATABASE_URL") %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 25 } %>
+  timeout: 10000

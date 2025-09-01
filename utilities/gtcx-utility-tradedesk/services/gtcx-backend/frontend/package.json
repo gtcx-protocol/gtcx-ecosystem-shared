@@ -1,0 +1,40 @@
+{
+  "name": "gtcx-admin-dashboard",
+  "version": "1.0.0",
+  "description": "GTCX Vue.js Admin Dashboard for Government Officials and Traders",
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8080",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0",
+    "vuex": "^4.1.0",
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+    "vue-chartjs": "^5.2.0",
+    "@vue/composition-api": "^1.7.0",
+    "leaflet": "^1.9.0",
+    "vue-leaflet": "^0.6.0",
+    "element-plus": "^2.3.0",
+    "@element-plus/icons-vue": "^2.1.0",
+    "dayjs": "^1.11.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "@vue/test-utils": "^2.3.0",
+    "jest": "^29.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

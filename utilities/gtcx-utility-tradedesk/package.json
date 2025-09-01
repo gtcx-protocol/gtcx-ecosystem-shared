@@ -1,0 +1,40 @@
+{
+  "name": "gtcx-platform",
+  "version": "1.0.0",
+  "description": "Global Trust and Compliance eXchange - Revolutionary blockchain-verified commodity trading platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:geotag": "npm run start --workspace=geotag-app",
+    "dev:tradepass": "npm run start --workspace=tradepass-app",
+    "dev:tradedesk": "npm run start --workspace=tradedesk-app",
+    "dev:all": "concurrently \"npm run dev:geotag\" \"npm run dev:tradepass\" \"npm run dev:tradedesk\"",
+    "build:all": "npm run build --workspaces",
+    "test:all": "npm run test --workspaces",
+    "lint:all": "npm run lint --workspaces",
+    "type-check:all": "npm run type-check --workspaces"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "concurrently": "^8.2.2",
+    "lerna": "^8.0.0",
+    "metro": "^0.82.5",
+    "metro-config": "^0.82.5",
+    "schema-utils": "^4.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.2.1",
+    "jest": "^30.0.5",
+    "typescript": "^5.9.2"
+  }
+}

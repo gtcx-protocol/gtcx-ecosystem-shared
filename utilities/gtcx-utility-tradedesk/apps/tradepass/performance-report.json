@@ -1,0 +1,94 @@
+{
+  "timestamp": "2025-08-09T11:45:13.114Z",
+  "performance": {
+    "buildTime": 0,
+    "testExecutionTime": 1413.2457090000003,
+    "typeCheckTime": 2944.108083,
+    "serverStartupTime": 0,
+    "memoryUsage": [
+      {
+        "timestamp": 1754739912089,
+        "heapUsed": 4623408,
+        "heapTotal": 5373952,
+        "rss": 33816576
+      },
+      {
+        "timestamp": 1754739912191,
+        "heapUsed": 4638808,
+        "heapTotal": 5636096,
+        "rss": 34209792
+      },
+      {
+        "timestamp": 1754739912292,
+        "heapUsed": 4640552,
+        "heapTotal": 5636096,
+        "rss": 34226176
+      },
+      {
+        "timestamp": 1754739912393,
+        "heapUsed": 4642296,
+        "heapTotal": 5636096,
+        "rss": 34242560
+      },
+      {
+        "timestamp": 1754739912494,
+        "heapUsed": 4644040,
+        "heapTotal": 5636096,
+        "rss": 34242560
+      },
+      {
+        "timestamp": 1754739912597,
+        "heapUsed": 4657920,
+        "heapTotal": 5636096,
+        "rss": 34521088
+      },
+      {
+        "timestamp": 1754739912698,
+        "heapUsed": 4660248,
+        "heapTotal": 5636096,
+        "rss": 34553856
+      },
+      {
+        "timestamp": 1754739912802,
+        "heapUsed": 4671904,
+        "heapTotal": 5636096,
+        "rss": 34783232
+      },
+      {
+        "timestamp": 1754739912904,
+        "heapUsed": 4673704,
+        "heapTotal": 5636096,
+        "rss": 34783232
+      },
+      {
+        "timestamp": 1754739913006,
+        "heapUsed": 4694576,
+        "heapTotal": 5636096,
+        "rss": 34947072
+      }
+    ],
+    "errorCount": 1327,
+    "testCoverage": 0
+  },
+  "baseline": {
+    "buildTime": 10000,
+    "testExecutionTime": 5000,
+    "typeCheckTime": 3000,
+    "errorCount": 0
+  },
+  "improvements": {
+    "buildTime": 2,
+    "errorReduction": 0
+  },
+  "recommendations": [
+    {
+      "category": "Code Quality",
+      "severity": "CRITICAL",
+      "issue": "1327 TypeScript errors found",
+      "recommendation": "Run automated error fixing script",
+      "impact": "Development Velocity",
+      "estimatedImprovement": "80% error reduction"
+    }
+  ],
+  "overallScore": 0
+}
